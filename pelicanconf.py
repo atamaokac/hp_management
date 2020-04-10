@@ -77,7 +77,7 @@ DISPLAY_PAGES_ON_MENU = True
 USE_FOLDER_AS_CATEGORY = True
 
 # Theme
-THEME = './themes/pelican-bootstrap3'
+THEME = './theme/pelican-bootstrap3'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 CUSTOM_CSS = 'static/css/custom.css'
 EXTRA_PATH_METADATA = {
