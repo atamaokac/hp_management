@@ -62,6 +62,7 @@ PLUGINS = [
     'render_math',
     'liquid_tags.youtube',
     'related_posts',
+    'i18n_subsites',
 ]
 
 RELATED_POSTS_MAX = 3
@@ -76,7 +77,12 @@ DISPLAY_PAGES_ON_MENU = True
 USE_FOLDER_AS_CATEGORY = True
 
 # Theme
-THEME = './theme/voidy-bootstrap'
+THEME = './themes/pelican-bootstrap3'
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+CUSTOM_CSS = 'static/css/custom.css'
+EXTRA_PATH_METADATA = {
+    'extra/custom.css': {'path': 'static/css/voidybootstrap-custom.css'},
+}
 
 ###
 ### theme-specific settings
