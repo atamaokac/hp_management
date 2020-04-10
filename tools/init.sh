@@ -12,12 +12,14 @@ cd plugins
 git submodule update --init pelican-ipynb
 cd ..
 
-themename="voidy-bootstrap"
+themepath=`python3 -c "import os,sys; sys.path.append(os.curdir); \
+					   import pelicanconf; print(pelicanconf.THEME)"`
+themename=`basename "$themepath"`
 cd themes
 git submodule update --init "$themename"
 cd ..
-mkdir -p "theme/$themename"
-cp -an "themes/$themename"/* "theme/$themename/"
+mkdir -p "$themepath"
+cp -an "themes/$themename"/* "$themepath/"
 
 # put webhook-cgi.
 cgitemplate="tools/lib/deploy.py"
