@@ -38,6 +38,9 @@ LINKS = (
 TWITTER_TIMELINE_URL = "https://twitter.com/oumed_python?ref_src=twsrc%5Etfw"
 TWITTER_USERNAME = 'oumed_python'
 
+#GITHUB_USER = 'oumpy'
+#GITHUB_SHOW_USER_LINK = True
+
 CUSTOM_SOCIAL_TITLE = "ソーシャル"
 CUSTOM_CATEGORIES_TITLE = "記事カテゴリ"
 CUSTOM_TAGS_TITLE = "タグ"

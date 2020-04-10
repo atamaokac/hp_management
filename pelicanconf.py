@@ -63,6 +63,7 @@ PLUGINS = [
     'liquid_tags.youtube',
     'related_posts',
     'i18n_subsites',
+	'tag_cloud',
 ]
 
 RELATED_POSTS_MAX = 3
@@ -79,10 +80,10 @@ USE_FOLDER_AS_CATEGORY = True
 # Theme
 THEME = './theme/pelican-bootstrap3'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
-CUSTOM_CSS = 'static/css/custom.css'
-EXTRA_PATH_METADATA = {
-    'extra/custom.css': {'path': 'static/css/voidybootstrap-custom.css'},
-}
+#BOOTSTRAP_THEME = 'journal'
+CUSTOM_CSS = 'static/css/voidybootstrap-custom.css'
+# EXTRA_PATH_METADATA = {
+# }
 
 ###
 ### theme-specific settings
@@ -122,6 +123,9 @@ CUSTOM_SCRIPTS_ARTICLE = "custom/scripts_article.html"
 SIDEBAR = "custom/sidebar.html"
 CUSTOM_SIDEBAR_MIDDLES = ("custom/sb_links.html", "custom/sb_taglist.html", )
 CUSTOM_SIDEBAR_BOTTOM = "custom/sb_twittertl.html"
+
+DISPLAY_TAGS_ON_SIDEBAR = True
+DISPLAY_TAGS_INLINE = True
 
 TWITTER_TIMELINE_HEIGHT = 600
 SIDEBAR_SIZE = 3
